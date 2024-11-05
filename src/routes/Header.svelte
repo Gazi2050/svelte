@@ -1,5 +1,8 @@
 <script lang="ts">
-    let { name }: { name: string } = $props();
+    let {
+        name,
+        fake_name = "ioi",
+    }: { name: string; fake_name?: string | null } = $props();
 </script>
 
 <h1 class="text-red-600 text-center font-bold text-2xl">
@@ -8,3 +11,5 @@
 <h2 class="text-red-600 text-center font-bold text-2xl">
     {name.replaceAll("a", "z")}
 </h2>
+
+{fake_name}
