@@ -37,4 +37,13 @@
             {formState.error}
         </p>
     {/if}
+
+{#snippet formStep({question,id,type}:{question:string;type:string;id:string})}
+<article>
+<div>
+    <label for={id}>{question}</label>
+    <input {type} {id} bind:value={formState[id]}>
+</div>
+</article>
+{/snippet}
 </main>
