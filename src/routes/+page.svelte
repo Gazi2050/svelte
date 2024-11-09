@@ -8,6 +8,7 @@
 </script>
 
 <main>
+    <p>Svelte</p>
     <p class="text-2xl font-bold m-5">Step:{formState.step}</p>
     {#if formState.step === 0}
         <div class="m-2">
